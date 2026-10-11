@@ -1,0 +1,98 @@
+; RSI Divergence Pro v3.0
+; Preset: PropFirm Conservative Challenge
+; Obiettivo: Passare challenge 8-10% in 1-2 mesi
+; Risk: 0.5% per trade, Max DD 4%
+;
+; === 1. RSI SETTINGS ===
+InpRSIPeriod=14
+InpRSIOverbought=70
+InpRSIOversold=30
+InpUseAdaptiveLevels=false
+InpAdaptiveOB_Uptrend=80
+InpAdaptiveOS_Uptrend=40
+InpAdaptiveOB_Downtrend=60
+InpAdaptiveOS_Downtrend=20
+;
+; === 2. DIVERGENCE DETECTION ===
+InpSwingStrength=3
+InpMinBarsBetween=5
+InpMaxBarsBetween=40
+InpMinRSIDiff=3.0
+InpTradeRegular=true
+InpTradeHidden=false
+InpRequireExtremeZone=true
+;
+; === 3. TIMEFRAMES ===
+InpTF_Trend=16408
+InpTF_Setup=16388
+InpTF_Entry=16385
+InpUseMTFConfirmation=true
+;
+; === 4. ENTRY CONFIRMATION ===
+InpConfirmType=4
+InpRequireSRConfluence=false
+InpSRLookback=100
+InpSRProximityPips=20
+;
+; === 5. RISK MANAGEMENT ===
+InpRiskPercent=0.5
+InpMaxDailyLoss=2.0
+InpMaxTotalDD=4.0
+InpMaxOpenTrades=1
+InpMaxTradesPerDay=2
+;
+; === 6. STOP LOSS ===
+InpSLMethod=0
+InpSLATRMultiplier=1.5
+InpSLFixedPips=50
+InpSLBufferPips=10
+InpATRPeriod=14
+;
+; === 7. TAKE PROFIT ===
+InpTP1_RR=1.5
+InpTP1_ClosePercent=50
+InpTP2_RR=2.5
+InpTP2_ClosePercent=30
+InpTP3_RR=4.0
+InpMoveToBreakeven=true
+InpBEBufferPips=5
+;
+; === 8. TRAILING STOP ===
+InpTrailMethod=1
+InpTrailATRMultiplier=1.5
+InpTrailFixedPips=30
+InpTrailStartPips=40
+;
+; === 9. FILTERS ===
+InpUseTrendFilter=true
+InpEMAFast=50
+InpEMASlow=200
+InpUseADXFilter=true
+InpADXPeriod=14
+InpADXMin=18
+InpADXMax=30
+InpAvoidNews=false
+InpNewsBufferMinutes=30
+;
+; === 10. TRADING HOURS ===
+InpUseTradingHours=true
+InpStartHour=8
+InpEndHour=17
+InpTradeMonday=false
+InpTradeTuesday=true
+InpTradeWednesday=true
+InpTradeThursday=true
+InpTradeFriday=false
+InpCloseOnFriday=true
+InpFridayCloseHour=18
+;
+; === 11. DISPLAY ===
+InpShowDashboard=true
+InpShowDivergenceLines=true
+InpEnableAlerts=true
+InpWriteLogFile=true
+InpLogFileName=PropFirm_Challenge
+;
+; === GENERAL ===
+InpMagicNumber=202601
+InpSlippage=10

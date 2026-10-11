@@ -1,0 +1,98 @@
+; RSI Divergence Pro v3.0
+; Preset: Backtest - Genera piu' segnali
+; USO: Solo per backtest/ottimizzazione, NON per live
+; Filtri ridotti per vedere piu' trade
+;
+; === 1. RSI SETTINGS ===
+InpRSIPeriod=14
+InpRSIOverbought=70
+InpRSIOversold=30
+InpUseAdaptiveLevels=false
+InpAdaptiveOB_Uptrend=80
+InpAdaptiveOS_Uptrend=40
+InpAdaptiveOB_Downtrend=60
+InpAdaptiveOS_Downtrend=20
+;
+; === 2. DIVERGENCE DETECTION ===
+InpSwingStrength=2
+InpMinBarsBetween=3
+InpMaxBarsBetween=50
+InpMinRSIDiff=2.0
+InpTradeRegular=true
+InpTradeHidden=true
+InpRequireExtremeZone=false
+;
+; === 3. TIMEFRAMES ===
+InpTF_Trend=16408
+InpTF_Setup=16388
+InpTF_Entry=16385
+InpUseMTFConfirmation=false
+;
+; === 4. ENTRY CONFIRMATION ===
+InpConfirmType=0
+InpRequireSRConfluence=false
+InpSRLookback=100
+InpSRProximityPips=20
+;
+; === 5. RISK MANAGEMENT ===
+InpRiskPercent=1.0
+InpMaxDailyLoss=5.0
+InpMaxTotalDD=10.0
+InpMaxOpenTrades=1
+InpMaxTradesPerDay=5
+;
+; === 6. STOP LOSS ===
+InpSLMethod=0
+InpSLATRMultiplier=1.5
+InpSLFixedPips=50
+InpSLBufferPips=10
+InpATRPeriod=14
+;
+; === 7. TAKE PROFIT ===
+InpTP1_RR=1.5
+InpTP1_ClosePercent=50
+InpTP2_RR=2.5
+InpTP2_ClosePercent=30
+InpTP3_RR=4.0
+InpMoveToBreakeven=true
+InpBEBufferPips=5
+;
+; === 8. TRAILING STOP ===
+InpTrailMethod=1
+InpTrailATRMultiplier=1.0
+InpTrailFixedPips=30
+InpTrailStartPips=30
+;
+; === 9. FILTERS ===
+InpUseTrendFilter=false
+InpEMAFast=50
+InpEMASlow=200
+InpUseADXFilter=false
+InpADXPeriod=14
+InpADXMin=10
+InpADXMax=50
+InpAvoidNews=false
+InpNewsBufferMinutes=30
+;
+; === 10. TRADING HOURS ===
+InpUseTradingHours=false
+InpStartHour=0
+InpEndHour=23
+InpTradeMonday=true
+InpTradeTuesday=true
+InpTradeWednesday=true
+InpTradeThursday=true
+InpTradeFriday=true
+InpCloseOnFriday=false
+InpFridayCloseHour=20
+;
+; === 11. DISPLAY ===
+InpShowDashboard=false
+InpShowDivergenceLines=false
+InpEnableAlerts=false
+InpWriteLogFile=false
+InpLogFileName=Backtest
+;
+; === GENERAL ===
+InpMagicNumber=202699
+InpSlippage=10
